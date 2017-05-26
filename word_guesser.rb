@@ -88,7 +88,8 @@ guess.letters_already_tried << guessed_letter
 end
 
 if guess.placeholder.include?("_")
-	puts "#{player2} has run out of guesses. Better luck next time, LOSER!"
+	puts "#{player2} has run out of guesses. Better luck next time!"
+	puts "#{player1}'s word was '#{guess.word}'"
 else 
 	puts "#{player2} figured out #{player1}'s word. GREAT JOB!"
 end	 
